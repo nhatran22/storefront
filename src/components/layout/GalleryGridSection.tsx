@@ -11,7 +11,7 @@ const images = [image1, image2, image3, image4, image5, image6, image7, image8, 
 
 export default function GalleryGridSection() {
     return (
-        <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[15px] py-8 px-[50px]">
+        <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-[15px] py-8 px-4 sm:px-8 md:px-[50px]">
             {images.map((img, idx) => (
                 <div key={idx} className="bg-[#18181b] rounded-2xl overflow-hidden flex items-center justify-center aspect-square shadow-lg">
                     <img src={img} alt={`gallery-${idx + 1}`} className="object-cover w-full h-full" />
